@@ -13,4 +13,21 @@ my_list = [1, 2, 3, 2, 4, 5, 1, 6, 7, 8, 5]
 final_list = remove_duplicates(my_list)
 print(final_list)
 
+Q:2 Create 2 nested lists and calculate the matrix addition 
+
+Define two matrices as nested lists
+matrix_a = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+matrix_b = [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
+
+result_matrix = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+
+ Perform matrix multiplication
+for i in range(len(matrix_a)):
+    for j in range(len(matrix_b[0])):
+        for k in range(len(matrix_b)):
+            result_matrix[i][j] += matrix_a[i][k] * matrix_b[k][j]
+
+print(result_matrix)
+
+
 
